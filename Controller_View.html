@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html ng-app="myModule">
+ <!--khai bao myModule trong .js-->
+<head>
+    <title> Module -Controller</title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+    <!--<!--kiem tra cdn co bi chet ko-->
+    <script>
+        window.angular || document.write("<script src='scripts\/angular.js'><\/script>"); //SU DUNG \ DE / HIEN
+    </script>
+    <script src="scripts/app1.js"></script>
+</head>
+<body ng-controller="myController">
+    <div >
+        First Name : <input type="text" ng-model="employee.FirstName" /><br /> <!--//FirstName,LastName,Gender phai dung-->
+        Last Name:  <input type="text" ng-model="employee.LastName" /><br />
+        Gender:<input type="text" ng-model="employee.Gender" /><br />
+    </div>
+    <hr />
+    <div >
+       First Name : {{employee.FirstName}}<br /> <!--//FirstName,LastName,Gender phai dung--> 
+        Last Name:  {{employee.LastName}}<br />
+        Gender: {{employee.Gender}}<br />
+    </div>
+    <hr />
+   
+
+</body>
+</html>

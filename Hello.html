@@ -1,0 +1,23 @@
+﻿a<!DOCTYPE html>
+<html >
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <!--<!--kiem tra cdn co bi chet ko-->-->
+    <script>
+        window.angular || document.write("<script src='scripts\/angular.min.js'><\/script>"); //SU DUNG \ DE / HIEN
+    </script>
+</head>
+<body ng-app> <!--BODY-->
+     Input name:<input type="text"  ng-model="name"/><br />
+    Display : <div> {{name}}</div>
+    <div>
+        10+10={{10+10}}
+    </div>
+
+    <div>
+        10+20={{10+20}}
+    </div>
+</body>
+</html>
